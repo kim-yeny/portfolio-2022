@@ -1,0 +1,134 @@
+body {
+    background: #000;
+}
+
+*, a {
+    color: #fff;
+}
+
+header {
+    border-top: 5px solid #fff;
+}
+
+/* PROFILE at the middle */
+#top {
+    margin: 0 0 80px;
+	grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+#top .item {
+    flex: 1;
+    padding: 5px;
+    border-top: 1px solid #fff;
+}
+
+#top h1 {
+    font-size: 2rem;
+    margin: 0 0 20px;
+}
+
+#top span {
+    color: #555;
+}
+
+#top a {
+    width: fit-content;
+    padding: 0 10px 0 0;
+    margin: 50px 0 0;
+    align-items: center;
+}
+
+#top a img {
+    margin: 0 10px 0 0;
+}
+
+/* MENU at the bottom */
+#bottom {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+#bottom a {
+    align-items: center;
+    height: 100px;
+    padding: 0 2%;
+    box-sizing: border-box;
+    border-top: 1px solid #fff;
+    overflow: hidden;
+}
+
+#bottom a:hover {
+    background: #fff;
+    border-color: #000;
+}
+
+#bottom a:hover h1,
+#bottom a:hover p {
+    color: #000;
+}
+
+#bottom h1 {
+    margin: 15px 0 0;
+    width: 380px;
+}
+
+#bottom p {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+/* Responsive ver. */
+@media(max-width : 1024px) {
+    
+    /* HEADER */
+    header {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+
+    header p {
+        margin: 30px 0;
+        text-align: right;
+    }
+
+    /* PROFILE at the middle */
+    #top {
+        grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    	row-gap: 80px;
+    	column-gap: 50px;
+    }
+
+    #top .item {
+        padding: 3%;
+    }
+
+    /* MENU at the bottom */
+    #bottom a {
+        height: 100px;
+        position: relative;
+    }
+    
+    #bottom h1 {
+        width: 100%;
+        font-size: 6rem;
+        color: #202020;
+    }
+    
+    #bottom p {
+        /* display: none; */
+        position: absolute;
+        font-size: 1.5rem;
+        top: 40%;
+        right: 5%;
+    }
+    
+}
