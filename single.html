@@ -36,12 +36,34 @@
     <script src="./resources/js/prefixfree.min.js"></script>
     <link rel="stylesheet" href="./resources/css/base.css">
     <link rel="stylesheet" href="./resources/css/default.css">
+    <link rel="stylesheet" href="./resources/css/modal.css">
     
     <!-- CSS Private -->
     <link rel="stylesheet" href="./resources/css/single.css">
 </head>
 
 <body>
+    <!-- MODAL -->
+    <div class="modal hide">
+        <div>
+            <div class="side side-left"></div>
+            <div class="content">
+                <div class="title">
+                </div>
+                <div class="item">
+                </div>
+                <div class="bottom-box flex">
+                    <div class="left"></div>
+                    <a class="btn-visit" href="#none" onclick="alert('링크로 이동합니다')">V I S I T</a>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div class="side side-right"></div>
+            <div class="btn-close"></div>
+        </div>
+    </div>
+    
+    <!-- MAIN -->
     <div id="wrap" class="flex">
         <!-- Title & Menu -->
         <header class="flex">
@@ -66,37 +88,7 @@
         </header>
         
         <!-- Contents -->
-        <section id="" class="container flex">
-            <div class="flex">
-                <h1>EsRP Landing page</h1>
-                <img src="https://via.placeholder.com/500x350" alt="">
-                <p>
-                    팀 프로젝트로 구현했던 웹 ERP 서비스의 가상 랜딩 페이지입니다.
-                    Flex 속성을 이용한 반응형 웹사이트로
-                    플러그인을 최소화하고 jQuery를 이용하여 퍼블리싱하였습니다.
-                    <span>【작업환경】 VSCODE, jQuery</span>
-                </p>
-            </div>
-            <div class="flex">
-                <h1>KKONDAE Test</h1>
-                <img src="https://via.placeholder.com/500x350" alt="">
-                <p>
-                    키치한 컨셉의 꼰대력 테스트 사이트입니다.
-                    바닐라JS를 이용하여 데이터를 핸들링하였고,
-                    카카오톡 API를 활용하여 공유 기능을 구현하였습니다.
-                    <span>【작업환경】 Atom, JavaScript</span>
-                </p>
-            </div>
-            <div class="flex">
-                <h1>Law Firm Website</h1>
-                <img src="https://via.placeholder.com/500x350" alt="">
-                <p>
-                    가상의 법무법인 홈페이지를 디자인하고 퍼블리싱하였습니다.
-                    jQuery를 이용하였고, Flex 속성을 이용한 반응형 웹사이트입니다.
-                    '공지사항' 카테고리를 서브페이지로 확인할 수 있습니다. 
-                    <span>【작업환경】 VSCODE, jQuery</span>
-                </p>
-            </div>
+        <section class="container flex">
         </section>
     </div>
 
@@ -107,5 +99,6 @@
 </body>
 
 <script src="./resources/js/default.js"></script>
+<script src="./resources/js/single.js"></script>
 
 </html>

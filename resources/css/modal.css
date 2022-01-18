@@ -1,54 +1,149 @@
 /* MODAL */
 .modal {
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
+    /* 가장 큰 틀은 무조건 fixed 속성을 사용해야 한다. */
+    /* 내부 레이아웃은 다른 div가 flex로 조정해줘야 하므로, fixed된 틀이 필요함. */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 30;
-}
-
-.overlay {
-    background: rgba(29, 25, 25, 0.9);
-    width: 100%;
-    height: 100%;
-}
-
-.content {
-    padding: 80px 10% 0;
-    box-sizing: border-box;
-
-    position: fixed;
-    width: 100%;
-    height: 100%;
+    /* 내부 컨텐츠가 길 예정이므로 스크롤 설정 */
     overflow-y: scroll;
-
     background: rgba(0, 0, 0, 0.9);
 }
 
-.content .item {
-    background: sandybrown;
+/* 모달창 내부 첫번째 요소는 컨텐츠를 감싸는 용도 */
+.modal > div {
+    /* 컨텐츠와 사이드 영역 레이아웃을 위해 flex 적용 */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* 내용이 들어갈 영역 */
+.content {
+    /* 자동으로 영역을 차지하도록 */
+    flex-grow: 1;
+    color: #fff;
+    position: relative;
+}
+
+/* 사이드 영역 - Modal Close 기능을 구현할 클릭 영역 */
+.side {
+    width: 10%;
+    /* 클릭 영역이 스크롤이 되어도 유지되야 하므로, inherit으로 상속 */
+    height: inherit;
+}
+
+/* 하단 영역 - Modal Close 기능을 구현할 클릭 영역 */
+.bottom {
+    width: 100%;
+    height: 80px;
+}
+
+/* 하단 영역에 버튼이 생길 시 */
+/* 버튼 외부 여백에 click 이벤트를 주기 위해 */
+/* 버튼 양옆으로 투명한 요소를 추가 배치한다 */
+/* 모달창 전체 레이아웃과 같은 원리 */
+.bottom-box {
+    width: 100%;
+}
+
+.bottom-box > div {
+    flex-grow: 1;
 }
 
 .title {
-    /* margin: 0 0 50px 0; */
+    padding: 50px 0;
 }
 
 .title h1 {
     font-size: 2rem;
-    color: #fff;
 }
 
 .title span {
     display: block;
-    margin: 30px 0 50px;
+    margin: 20px 0 0 0;
     font-size: 1rem;
     font-weight: lighter;
+    text-align: justify;
 }
 
-.item img {
+img {
+    display: block;
     width: 100%;
+}
+
+.btn-close {
+    display: none;
+}
+
+/* BTN Visit */
+.btn-visit {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 200px;
+    color: #fff;
+    z-index: 100;
+    margin: 80px 0;
+}
+
+.btn-visit:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Responsive ver. */
+@media(max-width : 1024px) {
+
+    .modal {
+        background: #000;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .side,
+    .bottom {
+        display: none;
+    }
+
+    .title {
+        padding: 30px;
+        color: #fff;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+    
+    .title span {
+        margin: 1rem 0 0;
+    }
+
+    .btn-close {
+        display: block;
+        position: fixed;
+        bottom: 3%;
+        right: 4%;
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border: 1px solid #000;
+        cursor: pointer;
+    }
+
+    /* BTN Visit */
+    .bottom-box > div {
+        visibility: hidden;
+    }
+
 }

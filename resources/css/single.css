@@ -4,7 +4,7 @@
     align-items: flex-end;
 }
 
-.container > div {
+.container .item {
     justify-content: space-between;
     align-items: flex-end;
     width: 75%;
@@ -12,9 +12,10 @@
     position: relative;
     padding: 20px 150px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
-.container > div:last-child {
+.container .item:last-child {
     border-bottom: 1px solid #000;
 }
 
@@ -38,10 +39,10 @@
     width: 49%;
 }
 
-.container h1,
+/* .container h1,
 .container img {
     cursor: pointer;
-}
+} */
 
 /* Responsive ver. */
 @media(max-width : 1024px) {
@@ -49,7 +50,7 @@
         padding: 0 0 80px;
     }
 
-    .container > div {
+    .container .item {
         flex-direction: column;
         justify-content: center;
         align-items: center;
