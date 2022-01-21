@@ -1,59 +1,100 @@
-// Design - 썸네일, 모달
 const data = [
     {
         num: 1,
         sub: 'Branding',
         title: '강한 친구들 합기도',
-        text: '으아아악 '
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
     },
     {
         num: 2,
         sub: 'Branding',
-        title: '육회한 사시미',
-        text: '으아아악 으아아악 '
+        title: '달빛바다',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
     },
     {
         num: 3,
-        sub: 'cvbc',
-        title: 'sdfsdfsdf vbc',
-        text: '으아아악 으아아악 으아아악 '
+        sub: 'Branding',
+        title: '달콤한 캬라멜 연구소',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
     },
     {
         num: 4,
-        sub: 'tyrty',
-        title: 'ryrtyrty qew',
-        text: '으아아악 으아아악 으아아악 으아아악 '
+        sub: 'Branding',
+        title: '도그앤캣',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
     },
     {
-        num: 1,
-        sub: 'Branding',
-        title: '강한 친구들 합기도',
-        text: '으아아악 으아아악 으아아악 으아아악 으아아악 '
+        num: 5,
+        sub: 'Promotion',
+        title: '논산지역자활센터',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
     },
     {
-        num: 2,
-        sub: 'Branding',
+        num: 6,
+        sub: 'Promotion',
         title: '육회한 사시미',
-        text: '으아아악 으아아악 으아아악 으아아악 으아아악 으아아악 '
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
     },
     {
-        num: 3,
-        sub: 'cvbc',
-        title: 'sdfsdfsdf vbc',
-        text: '으아아악 으아아악 으아아악 으아아악 으아아악 으아아악 으아아악 '
+        num: 7,
+        sub: 'Promotion',
+        title: '자연속애의원',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
     },
     {
-        num: 4,
-        sub: 'tyrty',
-        title: 'ryrtyrty qew',
-        text: '으아아악 으아아악 으아아악 으아아악 으아아악 으아아악 으아아악 으아아악 '
+        num: 8,
+        sub: 'Business card',
+        title: '메리츠화재',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+    },
+    {
+        num: 9,
+        sub: 'Business card',
+        title: '미래산업',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+    },
+    {
+        num: 10,
+        sub: 'Business card',
+        title: '소망카센타',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+    },
+    {
+        num: 11,
+        sub: 'Business card',
+        title: '토마스몬슨',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+    },
+    {
+        num: 12,
+        sub: 'Business card',
+        title: '피엘로직스',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+    },
+    {
+        num: 13,
+        sub: 'Naver Blog',
+        title: '광천제재소',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+    },
+    {
+        num: 14,
+        sub: 'Naver Blog',
+        title: '우드테일러',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+    },
+    {
+        num: 15,
+        sub: 'Naver Blog',
+        title: '하나로사랑의원',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
     },
 ]
 
 const thumbUrl = './resources/img/design/design-thumb-';
 const modalUrl = './resources/img/design/design-modal-';
 
-// Append data of the Design file list
+// Append data into the container's item
 $(function () {
     for (key in data) {
         $('.container').append(
@@ -73,12 +114,12 @@ $(function () {
     };
 });
 
-// Toggle MODAL and Append design
+// Toggle MODAL and Append data
 $(document).on('click', '.container .item', function(){
-    // Index of the IMG in the Child ITEM
+    // Index of the IMG in the container's item
     var idx = $(this).attr('name') - 1;
 
-    // Append data into MODAL
+    // Append data into the MODAL
     $('.modal .title').append(
         '<h1>'
         + data[idx].title

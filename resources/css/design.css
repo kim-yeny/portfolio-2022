@@ -1,3 +1,4 @@
+/* SECTION */
 .container {
     height: 100%;
     height: fit-content;
@@ -31,7 +32,7 @@
     cursor: pointer;
 }
 
-.container .item > div {
+.container .item .hide {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,10 +41,12 @@
     padding: 20px;
     box-sizing: border-box;
     background: #000;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .container .item:hover {
-    background: #000;
+    background-size: 0;
+    background-color: #000;
 }
 
 .container .item:hover .hide {

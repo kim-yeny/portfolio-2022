@@ -1,3 +1,4 @@
+/* SECTION */
 .container {
     padding: 0 0 120px;
     flex-direction: column;
@@ -24,6 +25,8 @@
     font-size: 3rem;
     top: 30px;
     left: -200px;
+
+    text-shadow: -0.7px 0 #fff, 0 0.7px #fff, 0.7px 0 #fff, 0 -0.7px #fff;
 }
 
 .container p {
@@ -39,13 +42,9 @@
     width: 49%;
 }
 
-/* .container h1,
-.container img {
-    cursor: pointer;
-} */
-
 /* Responsive ver. */
 @media(max-width : 1024px) {
+    
     .container {
         padding: 0 0 80px;
     }

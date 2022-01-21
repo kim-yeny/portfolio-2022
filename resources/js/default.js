@@ -1,9 +1,9 @@
-// Modal's elements
-let itemCon = $('.container .item');
+// Elements in MODAL
 let modal = $('.modal');
 let itemModal = $('.modal .item');
+let itemCon = $('.container .item');
 
-// Close modal
+// Close MODAL
 function closeModal() {
     // Reset MODAL
     $('.modal .title, .modal .item').empty();
@@ -15,10 +15,12 @@ function closeModal() {
 }
 
 // Close MODAL
+// It must be loaded as an HTML element.
 $(document).on('click', '.modal .side, .modal .bottom, .modal .bottom-box > div, .modal .btn-close', function(){ 		
     closeModal();
 });
 
+// READY
 $(function () {
     // Toggle NAV
     const nav = $('header nav');

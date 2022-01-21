@@ -1,4 +1,3 @@
-// Design - 썸네일, 모달
 const data = [
     {
         num: 1,
@@ -10,20 +9,20 @@ const data = [
         num: 2,
         title: 'KKONDAE Test',
         sub: '키치한 컨셉의 꼰대력 테스트 사이트입니다.',
-        text: '키치한 컨셉의 꼰대력 테스트 사이트입니다. 바닐라JS를 이용하여 데이터를 핸들링하였고, 카카오톡 API를 활용하여 공유 기능을 구현하였습니다. <span>【작업환경】 Atom, JavaScript</span>',
+        text: '키치한 컨셉의 꼰대력 테스트 사이트입니다. 부트스트랩을 활용하여 퍼블리싱하였습니다. 데이터는 바닐라JS로 핸들링하였고, 카카오톡 API를 활용한 공유 기능까지 구현하였습니다. <span>【작업환경】 Atom, JavaScript, Bootstrap v5.1.3</span>',
     },
     {
         num: 3,
         title: 'Law Firm Website',
         sub: '가상의 법무법인 홈페이지',
-        text: '가상의 법무법인 홈페이지를 디자인하고 퍼블리싱하였습니다. jQuery를 이용하였고, Flex 속성을 이용한 반응형 웹사이트입니다. <공지사항> 카테고리를 서브페이지로 확인할 수 있습니다. <span>【작업환경】 VSCODE, jQuery</span>'
+        text: '가상의 법무법인 홈페이지를 디자인하고 퍼블리싱하였습니다. jQuery를 이용하였고, Flex 속성을 이용한 반응형 웹사이트입니다. <b>\'고객센터 > 공지사항\'</b> 카테고리를 서브페이지로 확인하실 수 있습니다. <span>【작업환경】 VSCODE, jQuery</span>'
     },
 ]
 
 const thumbUrl = './resources/img/single/single-thumb-';
 const modalUrl = './resources/img/single/single-modal-';
 
-// Append data of the Design file list
+// Append data into the container's item
 $(function () {
     for (key in data) {
         $('.container').append(
@@ -43,12 +42,12 @@ $(function () {
     };
 });
 
-// Toggle MODAL and Append single
+// Toggle MODAL and Append data
 $(document).on('click', '.container .item', function () {
-    // Index of the IMG in the Child ITEM
+    // Index of the IMG in the container's item
     var idx = $(this).attr('name') - 1;
 
-    // Append data into MODAL
+    // Append data into the MODAL
     $('.modal .title').append(
         '<h1>'
         + data[idx].title
