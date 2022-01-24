@@ -28,9 +28,9 @@ $(function () {
         $('.container').append(
             '<div class="item flex" name="'
             + data[key].num
-            + '"> <h1>'
+            + '"><h1>'
             + data[key].title
-            + '</h1> <img src="'
+            + '</h1><img src="'
             + thumbUrl
             + data[key].num
             + '.jpg" alt="'
@@ -53,7 +53,7 @@ $(document).on('click', '.container .item', function () {
         + data[idx].title
         + '<span>'
         + data[idx].text
-        + '<span></h1>'
+        + '</span></h1>'
     );
 
     $('.modal .item').append(

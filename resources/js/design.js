@@ -105,7 +105,7 @@ $(function () {
             + data[key].num
             + '.jpg)" alt="'
             + data[key].title
-            + '"><div class="hide"><h1 class=""><span>'
+            + '"><div class="hide"><h1><span>'
             + data[key].sub
             + '</span>'
             + data[key].title
@@ -125,7 +125,7 @@ $(document).on('click', '.container .item', function(){
         + data[idx].title
         + '<span>'
         + data[idx].text
-        + '<span></h1>'
+        + '</span></h1>'
     );
 
     $('.modal .item').append(
