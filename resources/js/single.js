@@ -9,7 +9,7 @@ const data = [
         num: 2,
         title: 'KKONDAE Test',
         sub: '키치한 컨셉의 꼰대력 테스트 사이트입니다.',
-        text: '키치한 컨셉의 꼰대력 테스트 사이트입니다. 부트스트랩을 활용하여 퍼블리싱하였습니다. 데이터는 바닐라JS로 핸들링하였고, 카카오톡 API를 활용한 공유 기능까지 구현하였습니다. <span>【작업환경】 Atom, JavaScript, Bootstrap v5.1.3</span>',
+        text: '키치한 컨셉의 꼰대력 테스트 사이트입니다. 부트스트랩을 활용하여 퍼블리싱하였습니다. 데이터는 바닐라JS로 핸들링하였고, 카카오톡 API를 활용한 공유 기능까지 구현하였습니다. <span>【작업환경】 Atom, JavaScript, Bootstrap</span>',
     },
     {
         num: 3,

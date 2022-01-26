@@ -32,13 +32,13 @@ const data = [
     {
         num: 6,
         sub: 'Promotion',
-        title: '육회한 사시미',
+        title: '베어독 D&M',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
     },
     {
         num: 7,
         sub: 'Promotion',
-        title: '자연속애의원',
+        title: '육회한 사시미',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
     },
     {
@@ -80,11 +80,17 @@ const data = [
     {
         num: 14,
         sub: 'Naver Blog',
-        title: '우드테일러',
+        title: '베어독 D&M',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
     },
     {
         num: 15,
+        sub: 'Naver Blog',
+        title: '우드테일러',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+    },
+    {
+        num: 16,
         sub: 'Naver Blog',
         title: '하나로사랑의원',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
