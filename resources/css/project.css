@@ -23,9 +23,7 @@ section h1 {
 }
 
 .container-left h1 {
-    height: 65px;
-    padding: 0 20px;
-    line-height: 60px;
+    padding: 5px 20px;
     border-bottom: 1px solid #000;
 }
 
@@ -60,6 +58,7 @@ section h1 {
     box-sizing: border-box;
     background: #000;
     color: #fff;
+    font-weight: 300;
 }
 
 .container-right .item:hover {
@@ -83,10 +82,12 @@ section h1 {
 /* BTN Open */
 .container-right a {
     margin: 50px 0 0 0;
-    width: 150px;
-    height: 40px;
-    font-size: 0.8rem;
-    line-height: 40px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 50px;
     border: 1px solid #fff;
     background: transparent;
     color: #fff;
@@ -95,6 +96,7 @@ section h1 {
 .container-right a:hover {
     background: #fff;
     color: #000;
+    transition: all 0.2s;
 }
 
 /* Responsive ver. */
@@ -111,13 +113,31 @@ section h1 {
         width: 100%;
     }
 
+    /* Left Side */
+    .container-left {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+
+    .container-left h1 {
+        font-size: 1.5rem;
+        height: fit-content;
+        line-height: unset;
+        padding: 5px 15px;
+    }
+
+    .container-left p {
+        padding: 10px 15px;
+    }
+
     /* Right Side */
     .container-right {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        grid-template-rows: repeat(auto-fit, minmax(200px, auto));
         margin: 10px 0 0 0;
     }
     
     .container-right .item {
-        padding: 50px 30px;
+        padding: 25px;
     }
 
     .container-right .item .hide {
@@ -128,19 +148,31 @@ section h1 {
         position: unset;
         width: unset;
         height: unset;
-        padding: 30px 0 0 0;
+        padding: 20px 0 0 0;
         background: #fff;
         color: #000;
+        font-weight: unset;
     }
 
+    .container-right .item:hover {
+        background: unset;
+    }
+    
     .container-right .item:hover h1 {
         opacity: unset;
+        color: unset;
+    }
+
+    .container-right .item:hover .hide {
+        background: unset;
+        color: unset;
     }
 
     /* BTN Open */
     .container-right a,
     .container-right a:hover {
-        margin: 35px 0 0 0;
+        width: 100%;
+        margin: 20px 0 0 0;
         background: #000;
         color: #fff;
     }

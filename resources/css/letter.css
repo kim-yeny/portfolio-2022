@@ -1,3 +1,16 @@
+header h1 {
+    width: 50.2%;
+}
+
+header a {
+    padding: 0 7px;
+}
+
+header a:hover {
+    background: #000;
+    color: #fff;
+}
+
 /* SECTION */
 .container {
     flex-direction: column;
@@ -19,6 +32,7 @@
     flex-shrink: 0;
     width: 400px;
     font-size: 1.5rem;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
 .container p {

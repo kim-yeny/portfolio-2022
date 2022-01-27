@@ -2,98 +2,98 @@ const data = [
     {
         num: 1,
         sub: 'Branding',
-        title: '강한 친구들 합기도',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        title: '강친합기도',
+        text: '합기도 전문 교육 시설 브랜딩'
     },
     {
         num: 2,
         sub: 'Branding',
         title: '달빛바다',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '24시 무인 카페 브랜딩'
     },
     {
         num: 3,
         sub: 'Branding',
         title: '달콤한 캬라멜 연구소',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '카페 브랜딩'
     },
     {
         num: 4,
         sub: 'Branding',
         title: '도그앤캣',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '셀프 반려동물 사우나 브랜딩'
     },
     {
         num: 5,
         sub: 'Promotion',
         title: '논산지역자활센터',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '공공기관 비품 및 판촉 디자인'
     },
     {
         num: 6,
         sub: 'Promotion',
         title: '베어독 D&M',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '사내 비품 및 판촉 디자인'
     },
     {
         num: 7,
         sub: 'Promotion',
         title: '육회한 사시미',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '요식업 비품 및 판촉 디자인'
     },
     {
         num: 8,
         sub: 'Business card',
         title: '메리츠화재',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '개인 명함 디자인'
     },
     {
         num: 9,
         sub: 'Business card',
         title: '미래산업',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '업체 및 개인 명함 디자인'
     },
     {
         num: 10,
         sub: 'Business card',
         title: '소망카센타',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '업체 및 개인 명함 디자인'
     },
     {
         num: 11,
         sub: 'Business card',
         title: '토마스몬슨',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '업체 및 개인 명함 디자인'
     },
     {
         num: 12,
         sub: 'Business card',
         title: '피엘로직스',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '단체 명함 디자인'
     },
     {
         num: 13,
         sub: 'Naver Blog',
         title: '광천제재소',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '블로그 스킨 및 위젯 디자인'
     },
     {
         num: 14,
         sub: 'Naver Blog',
         title: '베어독 D&M',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '블로그 스킨 및 위젯 디자인'
     },
     {
         num: 15,
         sub: 'Naver Blog',
         title: '우드테일러',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '블로그 스킨 및 위젯 디자인'
     },
     {
         num: 16,
         sub: 'Naver Blog',
         title: '하나로사랑의원',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi.'
+        text: '블로그 스킨 및 위젯 디자인'
     },
 ]
 
@@ -128,7 +128,7 @@ $(document).on('click', '.container .item', function(){
     // Append data into the MODAL
     $('.modal .title').append(
         '<h1>'
-        + data[idx].title
+        + data[idx].sub
         + '<span>'
         + data[idx].text
         + '</span></h1>'

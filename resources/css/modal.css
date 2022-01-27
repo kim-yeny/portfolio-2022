@@ -59,16 +59,16 @@
 } */
 
 .title {
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .title h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .title span {
-    display: block;
-    margin: 0.8rem 0 0 0;
+    display: inline-block;
+    margin: 0 0 0 15px;
     font-size: 0.8rem;
     font-weight: lighter;
     text-align: justify;
@@ -134,9 +134,6 @@
 
     .modal {
         background: #000;
-
-        /* 이거 적용 해야하는지 확인 필요 */
-        overflow-y: auto;
     }
 
     .content {
@@ -149,16 +146,12 @@
     }
 
     .title {
-        padding: 30px;
-        color: #fff;
+        padding: 20px;
     }
 
-    .title h1 {
-        font-size: 2rem;
-    }
-    
     .title span {
-        margin: 1rem 0 0;
+        display: block;
+        margin: 5px 0 0 0;
     }
 
     /* only Mobile ver. */
@@ -167,10 +160,12 @@
         position: fixed;
         bottom: 3%;
         right: 4%;
-        width: 50px;
-        height: 50px;
-        background: #fff;
-        border: 1px solid #000;
+        width: 45px;
+        height: 45px;
+        background-color: #fff;
+        background-image: url(../img/close.svg);
+        border: 2px solid #000;
+        border-radius: 50%;
         cursor: pointer;
     }
 

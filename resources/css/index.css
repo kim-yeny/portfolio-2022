@@ -1,5 +1,7 @@
+html,
 body {
     background: #000;
+    font-weight: 300;
 }
 
 *, a {
@@ -8,6 +10,10 @@ body {
 
 header {
     border-top: 5px solid #fff;
+}
+
+header h1 {
+    width: 50.2%;
 }
 
 /* PROFILE at the middle */
@@ -33,14 +39,27 @@ header {
 }
 
 #top a {
+    position: relative;
     width: fit-content;
-    padding: 0 10px 0 0;
-    margin: 50px 0 0;
+    margin: 50px 0 0 -5px;
+    padding: 0 7px;
     align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 #top a img {
     margin: 0 10px 0 0;
+}
+
+#top a:hover {
+    background: #fff;
+    color: #000;
+}
+
+#top a:hover img {
+    filter: invert(100%);
 }
 
 /* MENU at the bottom */
@@ -57,11 +76,11 @@ header {
     box-sizing: border-box;
     border-top: 1px solid #fff;
     overflow: hidden;
+    transition: all 0.1s;
 }
 
 #bottom a:hover {
     background: #fff;
-    border-color: #000;
 }
 
 #bottom a:hover h1,
@@ -69,9 +88,13 @@ header {
     color: #000;
 }
 
+#bottom a:hover p {
+    font-weight: 400;
+}
+
 #bottom h1 {
-    margin: 15px 0 0;
-    width: 380px;
+    margin: 20px 0 0;
+    width: 470px;
 }
 
 #bottom p {
@@ -96,7 +119,7 @@ header {
     }
 
     header p {
-        margin: 30px 0;
+        margin: 30px 0 0;
         text-align: right;
     }
 
@@ -120,15 +143,15 @@ header {
     #bottom h1 {
         width: 100%;
         font-size: 6rem;
-        color: #202020;
+        opacity: 12%;
     }
     
     #bottom p {
-        /* display: none; */
         position: absolute;
-        font-size: 1.5rem;
         top: 40%;
         right: 5%;
+        font-size: 1.5rem;
+        font-weight: 500;
     }
     
 }
