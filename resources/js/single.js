@@ -4,7 +4,7 @@ const data = [
         title: 'EsRP Landing page',
         linkSite: 'https://project-esrp.netlify.app/',
         linkGit: 'https://github.com/kim-yeny/project-esrp',
-        text: '팀 프로젝트로 구현했던 웹 ERP 서비스의 가상 랜딩 페이지입니다. Flex 속성을 이용한 반응형 웹사이트로, 플러그인을 최소화하고 jQuery를 이용하여 퍼블리싱하였습니다.</span>',
+        text: '팀 프로젝트로 구현했던 웹 ERP 서비스의 가상 랜딩 페이지입니다. Flex 속성을 이용한 반응형 웹사이트로, 플러그인을 최소화하고 jQuery를 이용하여 퍼블리싱하였습니다.',
         colorBg: '#A8EBD0',
         colorBtn: '#333'
     },
@@ -60,7 +60,11 @@ $(document).on('click', '.container .item', function () {
     $('.modal .title').append(
         '<h1>'
         + data[idx].title
-        + '</h1>'
+        + '</h1><a href="'
+        + data[idx].linkSite
+        + '" target="_blank"><i class="fas fa-arrow-alt-circle-right"></i></a><a href="'
+        + data[idx].linkGit
+        + '" target="_blank"><i class="fab fa-github"></i></a>'
     );
 
     $('.modal .item').append(
@@ -69,16 +73,10 @@ $(document).on('click', '.container .item', function () {
         + data[idx].num
         + '.jpg" alt="'
         + data[idx].title
-        + '"><div class="btn-move" style="background-color: '
-        + data[idx].colorBg
-        + '"><a href="'
+        + '"><div class="bottom"></div><div class="btn-move"><a href="'
         + data[idx].linkSite
-        + '" style="color: '
-        + data[idx].colorBtn
         + '" target="_blank"><i class="fas fa-arrow-alt-circle-right"></i>Visit site</a><a href="'
         + data[idx].linkGit
-        + '" style="color: '
-        + data[idx].colorBtn
         + '" target="_blank"><i class="fab fa-github"></i>GitHub</a></div>'
     );
 
