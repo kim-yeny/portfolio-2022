@@ -81,6 +81,7 @@
 
 .item .btn-move {
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -89,6 +90,16 @@
 
 .item .btn-move a {
     font-size: 1.5rem;
+    display: block;
+    margin: 0 50px;
+}
+
+.item .btn-move a i {
+    margin: 0 10px 0 0;
+}
+
+.item .btn-move a:hover{
+    text-decoration: underline;
 }
 
 /* !! 앵커태그 추가하는 형태로 변경 !! */

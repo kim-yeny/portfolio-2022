@@ -11,19 +11,19 @@ const data = [
     {
         num: 2,
         title: 'KKONDAE Test',
-        linkSite: 'https://project-esrp.netlify.app/',
+        linkSite: 'https://project-kkondae.netlify.app/',
         linkGit: 'https://project-esrp.netlify.app/',
         text: '키치한 컨셉의 꼰대력 테스트 사이트입니다. 부트스트랩을 활용하여 퍼블리싱하였습니다. 데이터는 바닐라JS로 핸들링하였고, 카카오톡 API를 활용한 공유 기능까지 구현하였습니다.',
-        colorBg: 'red',
+        colorBg: '#022fb3',
         colorBtn: '#fff'
     },
     {
         num: 3,
         title: 'Law Firm Website',
-        linkSite: 'https://project-esrp.netlify.app/',
+        linkSite: 'https://project-lawfirm.netlify.app/',
         linkGit: 'https://project-esrp.netlify.app/',
         text: '가상의 법무법인 홈페이지를 디자인하고 퍼블리싱하였습니다. jQuery를 이용하였고, Flex 속성을 이용한 반응형 웹사이트입니다. <b>\'고객센터 > 공지사항\'</b> 카테고리를 서브페이지로 확인하실 수 있습니다.',
-        colorBg: 'blue',
+        colorBg: '#b39d72',
         colorBtn: '#fff'
     },
 ]
@@ -75,11 +75,11 @@ $(document).on('click', '.container .item', function () {
         + data[idx].linkSite
         + '" style="color: '
         + data[idx].colorBtn
-        + '" target="_blank">사이트 바로가기</a><a href="'
+        + '" target="_blank"><i class="fas fa-arrow-alt-circle-right"></i>Visit site</a><a href="'
         + data[idx].linkGit
         + '" style="color: '
         + data[idx].colorBtn
-        + '" target="_blank">깃허브 둘러보기</a></div>'
+        + '" target="_blank"><i class="fab fa-github"></i>GitHub</a></div>'
     );
 
     // Open MODAL
