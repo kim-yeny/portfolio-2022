@@ -45,18 +45,18 @@
     /* background: cyan; */
 }
 
+/* !! 앵커태그 추가하는 형태로 변경 !! */
 /* 하단 영역에 버튼이 생길 시 */
 /* 버튼 외부 여백에 click 이벤트를 주기 위해 */
 /* 버튼 양옆으로 투명한 요소를 추가 배치한다 */
 /* 모달창 전체 레이아웃과 같은 원리 */
-.bottom-box {
+/* .bottom-box {
     width: 100%;
 }
 
 .bottom-box > div {
     flex-grow: 1;
-    /* background: fuchsia; */
-}
+} */
 
 .title {
     padding: 30px 0;
@@ -74,13 +74,26 @@
     text-align: justify;
 }
 
-img {
+.item img {
     display: block;
     width: 100%;
 }
 
+.item .btn-move {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.item .btn-move a {
+    font-size: 1.5rem;
+}
+
+/* !! 앵커태그 추가하는 형태로 변경 !! */
 /* BTN Visit at the bottom */
-.btn-visit {
+/* .btn-visit {
     display: inline-block;
     width: 200px;
     height: 200px;
@@ -98,7 +111,7 @@ img {
 .btn-visit:hover {
     background: #fff;
     color: #000;
-}
+} */
 
 /* only Mobile ver. */
 .btn-close {
@@ -110,6 +123,9 @@ img {
 
     .modal {
         background: #000;
+
+        /* 이거 적용 해야하는지 확인 필요 */
+        overflow-y: auto;
     }
 
     .content {
@@ -147,9 +163,10 @@ img {
         cursor: pointer;
     }
 
+    /* !! 앵커태그 추가하는 형태로 변경 !! */
     /* BTN Visit at the bottom */
-    .bottom-box > div {
+    /* .bottom-box > div {
         visibility: hidden;
-    }
+    } */
 
 }

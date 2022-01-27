@@ -2,20 +2,29 @@ const data = [
     {
         num: 1,
         title: 'EsRP Landing page',
-        sub: '팀 프로젝트 웹 ERP 서비스의 가상 랜딩 페이지',
-        text: '팀 프로젝트로 구현했던 웹 ERP 서비스의 가상 랜딩 페이지입니다. Flex 속성을 이용한 반응형 웹사이트로, 플러그인을 최소화하고 jQuery를 이용하여 퍼블리싱하였습니다.<span>【작업환경】 VSCODE, jQuery</span>',
+        linkSite: 'https://project-esrp.netlify.app/',
+        linkGit: 'https://project-esrp.netlify.app/',
+        text: '팀 프로젝트로 구현했던 웹 ERP 서비스의 가상 랜딩 페이지입니다. Flex 속성을 이용한 반응형 웹사이트로, 플러그인을 최소화하고 jQuery를 이용하여 퍼블리싱하였습니다.</span>',
+        colorBg: '#A8EBD0',
+        colorBtn: '#333'
     },
     {
         num: 2,
         title: 'KKONDAE Test',
-        sub: '키치한 컨셉의 꼰대력 테스트 사이트입니다.',
-        text: '키치한 컨셉의 꼰대력 테스트 사이트입니다. 부트스트랩을 활용하여 퍼블리싱하였습니다. 데이터는 바닐라JS로 핸들링하였고, 카카오톡 API를 활용한 공유 기능까지 구현하였습니다. <span>【작업환경】 Atom, JavaScript, Bootstrap</span>',
+        linkSite: 'https://project-esrp.netlify.app/',
+        linkGit: 'https://project-esrp.netlify.app/',
+        text: '키치한 컨셉의 꼰대력 테스트 사이트입니다. 부트스트랩을 활용하여 퍼블리싱하였습니다. 데이터는 바닐라JS로 핸들링하였고, 카카오톡 API를 활용한 공유 기능까지 구현하였습니다.',
+        colorBg: 'red',
+        colorBtn: '#fff'
     },
     {
         num: 3,
         title: 'Law Firm Website',
-        sub: '가상의 법무법인 홈페이지',
-        text: '가상의 법무법인 홈페이지를 디자인하고 퍼블리싱하였습니다. jQuery를 이용하였고, Flex 속성을 이용한 반응형 웹사이트입니다. <b>\'고객센터 > 공지사항\'</b> 카테고리를 서브페이지로 확인하실 수 있습니다. <span>【작업환경】 VSCODE, jQuery</span>'
+        linkSite: 'https://project-esrp.netlify.app/',
+        linkGit: 'https://project-esrp.netlify.app/',
+        text: '가상의 법무법인 홈페이지를 디자인하고 퍼블리싱하였습니다. jQuery를 이용하였고, Flex 속성을 이용한 반응형 웹사이트입니다. <b>\'고객센터 > 공지사항\'</b> 카테고리를 서브페이지로 확인하실 수 있습니다.',
+        colorBg: 'blue',
+        colorBtn: '#fff'
     },
 ]
 
@@ -51,9 +60,7 @@ $(document).on('click', '.container .item', function () {
     $('.modal .title').append(
         '<h1>'
         + data[idx].title
-        + '<span>'
-        + data[idx].text
-        + '</span></h1>'
+        + '</h1>'
     );
 
     $('.modal .item').append(
@@ -62,7 +69,17 @@ $(document).on('click', '.container .item', function () {
         + data[idx].num
         + '.jpg" alt="'
         + data[idx].title
-        + '">'
+        + '"><div class="btn-move" style="background-color: '
+        + data[idx].colorBg
+        + '"><a href="'
+        + data[idx].linkSite
+        + '" style="color: '
+        + data[idx].colorBtn
+        + '" target="_blank">사이트 바로가기</a><a href="'
+        + data[idx].linkGit
+        + '" style="color: '
+        + data[idx].colorBtn
+        + '" target="_blank">깃허브 둘러보기</a></div>'
     );
 
     // Open MODAL
