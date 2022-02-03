@@ -18,14 +18,14 @@ const data = [
         title: 'Law Firm Website',
         linkSite: 'https://project-lawfirm.netlify.app/',
         linkGit: 'https://github.com/kim-yeny/project-lawfirm',
-        text: '가상의 법무법인 홈페이지를 디자인하고 퍼블리싱하였습니다. jQuery를 이용하였고, Flex 속성을 이용한 반응형 웹사이트입니다. <b>\'고객센터 > 공지사항\'</b> 카테고리를 서브페이지로 확인하실 수 있습니다.',
+        text: '가상의 법무법인 홈페이지를 디자인 및 퍼블리싱하였습니다. jQuery를 이용하였고, Flex 속성을 이용한 반응형 웹사이트입니다. <b>\'고객센터 > 공지사항\'</b> 카테고리를 서브페이지로 확인하실 수 있습니다.',
     },
     {
         num: 4,
         title: 'Online Shopping',
         linkSite: 'https://project-shop-1.netlify.app/',
         linkGit: 'https://github.com/kim-yeny/project-shop-1',
-        text: '가상의 온라인 웹 쇼핑몰 메인 화면을 디자인하고 퍼블리싱하였습니다. 1280px의 고정형 웹사이트로, 별도의 플러그인을 사용하지 않고 바닐라 JS와 jQuery를 사용하여 완성하였습니다.',
+        text: '가상의 온라인 웹 쇼핑몰 메인 화면을 디자인 및 퍼블리싱하였습니다. 너비 1280px의 고정형 웹사이트로, 별도의 플러그인 없이 jQuery를 사용하여 완성하였습니다.',
     },
 ]
 
