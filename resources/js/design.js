@@ -9,7 +9,7 @@ const data = [
         num: 2,
         sub: 'Branding',
         title: '달빛바다',
-        text: '24시 무인 카페 브랜딩'
+        text: '무인 카페 브랜딩'
     },
     {
         num: 3,
@@ -51,19 +51,19 @@ const data = [
         num: 9,
         sub: 'Business card',
         title: '미래산업',
-        text: '업체 및 개인 명함 디자인'
+        text: '개인 명함 디자인'
     },
     {
         num: 10,
         sub: 'Business card',
         title: '소망카센타',
-        text: '업체 및 개인 명함 디자인'
+        text: '개인 명함 디자인'
     },
     {
         num: 11,
         sub: 'Business card',
         title: '토마스몬슨',
-        text: '업체 및 개인 명함 디자인'
+        text: '개인 명함 디자인'
     },
     {
         num: 12,
