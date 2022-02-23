@@ -127,6 +127,10 @@
     color: #000;
 }
 
+.item .btn-move img {
+    width: 50px;
+}
+
 /* !! 앵커태그 추가하는 형태로 변경 !! */
 /* BTN Visit at the bottom */
 /* .btn-visit {

@@ -35,7 +35,7 @@ const data = [
         num: 5,
         title: "Online Shopping",
         ait: "온라인 쇼핑몰",
-        linkSite: "https://project-shop-1.netlify.app/",
+        linkSite: "https://project-shop-01.netlify.app/",
         linkGit: "https://github.com/kim-yeny/project-shop-1",
         text: "가상의 온라인 웹 쇼핑몰 메인 화면을 디자인 및 퍼블리싱하였습니다. 너비 1280px의 고정형 웹사이트로, 별도의 플러그인 없이 jQuery를 사용하여 완성하였습니다.",
     },
@@ -48,18 +48,10 @@ const modalUrl = "./resources/img/single/single-modal-";
 $(function () {
     for (key in data) {
         $(".container").append(
-            "<div class=\"item flex\" name=\""
-            + data[key].num
-            + "\"><h1>"
-            + data[key].title
-            + "</h1><img src=\""
-            + thumbUrl
-            + data[key].num
-            + ".jpg\" alt=\""
-            + data[key].alt
-            + "\"><p>"
-            + data[key].text
-            + "</p></div>"
+            `<div class="item flex" name="${data[key].num}">`
+            + `<h1>${data[key].title}</h1>`
+            + `<img src="${thumbUrl}${data[key].num}.jpg" alt="${data[key].alt}">`
+            + `<p>${data[key].text}</p></div>`
         );
     };
 });
@@ -71,28 +63,25 @@ $(document).on("click", ".container .item", function () {
 
     // Append data into the MODAL
     $(".modal .title").append(
-        "<h1>"
-        + data[idx].title
-        + "</h1><a href=\""
-        + data[idx].linkSite
-        + "\" target=\"_blank\"><i class=\"fas fa-arrow-alt-circle-right\"></i></a><a href=\""
-        + data[idx].linkGit
-        + "\" target=\"_blank\"><i class=\"fab fa-github\"></i></a>"
+        `<h1>${data[idx].title}</h1>`
+        + `<a href="${data[idx].linkSite}" target="_blank">`
+        // + `<i class="fas fa-arrow-alt-circle-right"></i></a>`
+        + `<a href="${data[idx].linkGit}" target="_blank">`
+        // + `<i class="fab fa-github"></i>`
+        + `</a>`
     );
 
     $(".modal .item").append(
-        "<img src=\""
-        + modalUrl
-        + data[idx].num
-        + ".jpg\" alt=\""
-        + data[idx].alt
-        + "\"><div class=\"bottom\"></div><div class=\"btn-move\"><a href=\""
-        + data[idx].linkSite
-        + "\" target=\"_blank\"><i class=\"fas fa-arrow-alt-circle-right\"></i>Visit site</a><a href=\""
-        + data[idx].linkGit
-        + "\" target=\"_blank\"><i class=\"fab fa-github\"></i>GitHub</a></div>"
+        `<img src="${modalUrl}${data[idx].num}.jpg" alt="${data[idx].alt}">`
+        + `<div class="bottom"></div>`
+        + `<div class="btn-move">`
+        + `<a href="${data[idx].linkSite}" target="_blank">`
+        + `<i class="fas fa-arrow-alt-circle-right"></i>Visit site</a>`
+        + `<a href="${data[idx].linkGit}" target="_blank">`
+        + `<i class="fab fa-github"></i>GitHub</a>`
+        + `</div>`
     );
-
+    
     // Open MODAL
     modal.show();
     $("body").css("overflow-y", "hidden");

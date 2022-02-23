@@ -39,22 +39,20 @@
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     padding: 30px;
     box-sizing: border-box;
-    background: #000;
-}
-
-.container .item:hover {
-    background-size: 0;
     background-color: #000;
+    opacity: 0;
+    transition: all 0.1s;
 }
 
 .container .item:hover .hide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    opacity: 1;
 }
 
 /* Responsive ver. */

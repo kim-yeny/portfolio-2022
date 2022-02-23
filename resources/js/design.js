@@ -104,18 +104,11 @@ const modalUrl = "./resources/img/design/design-modal-";
 $(function () {
     for (key in data) {
         $(".container").append(
-            "<div class=\"item flex\" name=\""
-            + data[key].num
-            + "\" style=\"background-image: url("
-            + thumbUrl
-            + data[key].num
-            + ".jpg)\" alt=\""
-            + data[key].title
-            + "\"><div class=\"hide\"><h1><span>"
-            + data[key].sub
-            + "</span>"
-            + data[key].title
-            + "</h1></div></div>"
+            `<div class="item flex" name="${data[key].num}"`
+            + `style="background-image: url(${thumbUrl}${data[key].num}.jpg)" alt="${data[key].title}">`
+            + `<div class="hide"><h1><span>${data[key].sub}</span>`
+            + `${data[key].title}</h1></div></div>`
+
         );
     };
 });
@@ -127,20 +120,11 @@ $(document).on("click", ".container .item", function(){
 
     // Append data into the MODAL
     $(".modal .title").append(
-        "<h1>"
-        + data[idx].sub
-        + "<span>"
-        + data[idx].text
-        + "</span></h1>"
+        `<h1>${data[idx].sub}<span>${data[idx].text}</span></h1>`
     );
 
     $(".modal .item").append(
-        "<img src=\""
-        + modalUrl
-        + data[idx].num
-        + ".jpg\" alt=\""
-        + data[idx].title
-        + "\">"
+        `<img src="${modalUrl}${data[idx].num}.jpg" alt="${data[idx].title}">`
     );
     
     // Open MODAL
