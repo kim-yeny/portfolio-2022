@@ -29,12 +29,13 @@
 /* 내용이 들어갈 영역 */
 .content {
     /* 자동으로 영역을 차지하도록 */
-    display: flex;
-    flex-direction: column;
     width: 1200px;
     color: #fff;
     position: relative;
     /* background: red; */
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* 사이드 영역 - Modal Close 기능을 구현할 클릭 영역 */
