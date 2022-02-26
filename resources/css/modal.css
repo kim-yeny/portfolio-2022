@@ -108,14 +108,19 @@
 }
 
 .item .btn-move a {
-    font-size: 2.5rem;
     display: block;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    border: 1px solid #fff;
-    padding: 30px 40px;
     width: 50%;
+    height: 70px;
+    padding: 30px 40px;
+    
+    border: 1px solid #fff;
     color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .item .btn-move a i {
@@ -123,12 +128,13 @@
 }
 
 .item .btn-move a:hover{
-    background: #fff;
-    color: #000;
+    background: #000;
+    border: 1px solid #000;
+    filter: invert(100);
 }
 
 .item .btn-move img {
-    width: 50px;
+    width: 70px;
 }
 
 /* !! 앵커태그 추가하는 형태로 변경 !! */
