@@ -2,6 +2,9 @@
 let modal = $(".modal");
 let itemModal = $(".modal .item");
 let itemCon = $(".container .item");
+let alertModal = $(".alert");
+let alertCon = $(".alert div p");
+let alertBtn = $(".alert div button");
 
 // Close MODAL
 function closeModal() {
@@ -14,6 +17,26 @@ function closeModal() {
     $("body").css("overflow-y", "scroll");
 }
 
+// Close ALERT
+function closeAlert() {
+    alertModal.animate({
+        top: "-150px"
+    }, 300);
+    setTimeout(() => {
+        alertModal.css("display", "none");
+    }, 300);
+}
+
+// Custom alert modal
+function alertCustom(txt) {
+    // Print alert text
+    alertCon.text(txt);
+    alertModal.css("display", "flex");
+    alertModal.animate({
+        top: "0"
+    }, 300);
+}
+
 // Copy contents
 function copyClip(val, txt) {
     var textarea = document.createElement("textarea");
@@ -21,7 +44,7 @@ function copyClip(val, txt) {
     textarea.value = val;
     textarea.select();
     document.execCommand('copy');
-    alert(`${txt} 클립보드에 복사했습니다.`);
+    alertCustom(`${txt} 클립보드에 복사했습니다.`);
     document.body.removeChild(textarea);
 }
 
@@ -37,7 +60,6 @@ $(function () {
     const nav = $("header nav");
     const menuBtn = $(".btn-menu");
     $(menuBtn).click(function () {
-        console.log("click");
         $(nav).toggleClass("on");
     });
 

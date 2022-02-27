@@ -165,44 +165,65 @@
 
 /* Alert modal */
 .alert {
-    overflow-y: hidden;
+    display: none;
+    /* display: flex; */
+
+    position: fixed;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 30;
+
     justify-content: center;
     align-items: center;
-    filter: blur(10);
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
 }
 
 .alert > div {
-    flex-direction: column;
-    min-height: fit-content;
-    width: 400px;
-    padding: 20px 30px;
-    background-color: #000;
-    border: 3px solid #fff;
+    position: relative;
+    align-items: center;
+    width: 500px;
+    min-height: 50px;
+    height: fit-content;
+    padding: 30px;
+    background-color: #fff;
 }
 
-.alert > div > span {
-    width: 100%;
+.alert p {
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 430px;
     text-align: justify;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #000;
 }
 
 .alert button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
     width: 50px;
     height: 50px;
+    background-color: transparent;
 }
+
 .alert button:after,
 .alert button:before {
+    content: "";
     position: absolute;
-    left: 15px;
-    content: '';
-    height: 40px;
-    width: 2px;
-    background-color: #fff;
+    top: 50%;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #000;
 }
+
 .alert button:before {
     transform: rotate(45deg);
 }
+
 .alert button:after {
     transform: rotate(-45deg);
 }
