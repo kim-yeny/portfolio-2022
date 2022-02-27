@@ -2,6 +2,8 @@ html,
 body {
     background: #000;
     font-weight: 300;
+
+    height: 100vh;
 }
 
 *, a {
@@ -34,14 +36,15 @@ header h1 {
     margin: 0 0 20px;
 }
 
-#top span {
+#top span:not(span.copy) {
     color: #555;
+    margin-right: 5px;
 }
 
-#top a {
+#top a:not(a.site) {
     position: relative;
     width: fit-content;
-    margin: 50px 0 0 -5px;
+    margin: 30px 0 0 -5px;
     padding: 0 7px;
     align-items: center;
     font-size: 1.2rem;
@@ -55,7 +58,7 @@ header h1 {
     transition: all 0.1s;
 }
 
-#top a:hover {
+#top a:hover:not(a.site) {
     background: #fff;
     color: #000;
 }

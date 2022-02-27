@@ -38,6 +38,7 @@
     <script src="./resources/js/prefixfree.min.js"></script>
     <link rel="stylesheet" href="./resources/css/base.css">
     <link rel="stylesheet" href="./resources/css/default.css">
+    <link rel="stylesheet" href="./resources/css/modal.css">
     
     <!-- CSS Private -->
     <link rel="stylesheet" href="./resources/css/index.css">
@@ -52,6 +53,16 @@
 </head>
 
 <body>
+    <!-- Alert modal -->
+    <div class="modal alert flex">
+        <div class="flex">
+            <span>
+                sdfsdkjfhksdhfksjsdfsdkjfhksdhfksj
+            </span>
+            <button></button>
+        </div>
+    </div>
+    
     <div id="wrap" class="flex">
         <!-- Intro -->
         <header class="flex">
@@ -68,9 +79,15 @@
             <div class="item">
                 <h1>Ye-Eun Kim</h1>
                 <p>
-                    김예은 (1996.07.15)<br>
-                    010-4320-7144<br>
-                    des423@naver.com
+                    김예은 (1996.07.15)
+                    <br>
+                    <span class="copy" onclick="copyClip(this.innerText, '연락처를')">
+                        010-4320-7144
+                    </span>
+                    <span class="copy" onclick="copyClip(this.innerText, '메일 주소를')">
+                        des423@naver.com
+                    </span>
+                    <a href="https://github.com/kim-yeny" class="site" target="_blank">github.com/kim-yeny</a>
                 </p>
                 <a href="./letter.html" class="flex" title="자기소개">
                     <img src="./resources/img/more.svg" height="20" width="20">
@@ -124,5 +141,7 @@
         </section>
     </div>
 </body>
+
+<script src="./resources/js/default.js"></script>
 
 </html>

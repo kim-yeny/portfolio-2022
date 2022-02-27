@@ -14,9 +14,20 @@ function closeModal() {
     $("body").css("overflow-y", "scroll");
 }
 
+// Copy contents
+function copyClip(val, txt) {
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    textarea.value = val;
+    textarea.select();
+    document.execCommand('copy');
+    alert(`${txt} 클립보드에 복사했습니다.`);
+    document.body.removeChild(textarea);
+}
+
 // Close MODAL
 // It must be loaded as an HTML element.
-$(document).on("click", ".modal .side, .modal .bottom, .modal .bottom-box > div, .modal .btn-close", function(){ 		
+$(document).on("click", ".modal .side, .modal .bottom, .modal .bottom-box > div, .modal .btn-close", function () {
     closeModal();
 });
 

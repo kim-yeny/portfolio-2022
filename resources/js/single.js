@@ -79,11 +79,11 @@ $(document).on("click", ".container .item", function () {
     $(".modal .item").append(
         `<img src="${modalUrl}${data[idx].num}.jpg" alt="${data[idx].alt}">`
         + `<div class="bottom"></div>`
-        + `<div class="btn-move">`
-        + `<a href="${data[idx].linkSite}" target="_blank">`
+        + `<div class="btn-move flex">`
+        + `<a href="${data[idx].linkSite}" class="flex" target="_blank">`
         + `<div><i class="fas fa-arrow-alt-circle-right"></i>Visit site</div>`
         + `${data[idx].code}`
-        + `<a href="${data[idx].linkGit}" target="_blank">`
+        + `<a href="${data[idx].linkGit}" class="flex" target="_blank">`
         + `<div><i class="fab fa-github"></i>GitHub</div></a>`
         + `</div>`
     );
