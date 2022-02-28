@@ -1,9 +1,8 @@
 html,
 body {
+    height: 100vh;
     background: #000;
     font-weight: 300;
-
-    height: 100vh;
 }
 
 *, a {
@@ -26,29 +25,35 @@ header h1 {
 }
 
 #top .item {
+    max-width: 100%;
     flex: 1;
     padding: 5px;
+    box-sizing: border-box;
     border-top: 1px solid #fff;
 }
 
 #top h1 {
-    font-size: 2rem;
     margin: 0 0 20px;
+    font-size: 2rem;
 }
 
 #top span:not(span.copy) {
-    color: #555;
     margin-right: 5px;
+    color: #555;
+}
+
+#top span.copy {
+    cursor: pointer;
 }
 
 #top a:not(a.site) {
+    align-items: center;
     position: relative;
     width: fit-content;
     margin: 30px 0 0 -5px;
-    padding: 0 7px;
-    align-items: center;
-    font-size: 1.2rem;
+    padding: 2px 7px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
     font-weight: bold;
     transition: all 0.1s;
 }
@@ -130,19 +135,28 @@ header h1 {
 
     /* PROFILE at the middle */
     #top {
-        grid-template-columns: repeat(auto-fill, minmax(300px, auto));
-    	row-gap: 80px;
-    	column-gap: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(100%, auto));
+    	row-gap: 50px;
+    	column-gap: 100px;
     }
 
-    #top .item {
-        padding: 3%;
+    #top span:not(span.copy) {
+        display: block;
+        margin-right: 0;
+    }
+
+    #top span:not(span.copy):not(:first-of-type) {
+        margin-top: 5px;
+    }
+
+    #top a:not(a.site) {
+        font-size: 1.5rem;
     }
 
     /* MENU at the bottom */
     #bottom a {
-        height: 100px;
         position: relative;
+        height: 100px;
     }
     
     #bottom h1 {

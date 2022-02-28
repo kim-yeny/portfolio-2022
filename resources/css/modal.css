@@ -1,7 +1,7 @@
 /* MODAL */
 .modal {
-    /* 가장 큰 틀은 무조건 fixed 속성을 사용해야 한다. */
-    /* 내부 레이아웃은 다른 div가 flex로 조정해줘야 하므로, fixed된 틀이 필요함. */
+    /* 가장 큰 틀은 무조건 fixed 속성을 사용해야 함 */
+    /* 내부 레이아웃은 다른 div가 flex로 조정해줘야 하므로 fixed된 틀이 필요 */
     position: fixed;
     top: 0;
     left: 0;
@@ -31,18 +31,17 @@
     /* 자동으로 영역을 차지하도록 */
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 1200px;
     color: #fff;
-    position: relative;
     /* background: red; */
 }
 
 /* 사이드 영역 - Modal Close 기능을 구현할 클릭 영역 */
 .side {
     flex-grow: 1;
-    /* 클릭 영역이 스크롤이 되어도 유지되야 하므로, inherit으로 상속 */
     height: inherit;
-    /* background: blue; */
+    /* 클릭 영역이 스크롤이 되어도 유지되어야 하므로 inherit으로 상속 */
 }
 
 /* 하단 영역 - Modal Close 기능을 구현할 클릭 영역 */
@@ -50,43 +49,29 @@
     width: 100%;
     min-height: 80px;
     flex-grow: 1;
-    /* background: cyan; */
 }
-
-/* !! 앵커태그 추가하는 형태로 변경 !! */
-/* 하단 영역에 버튼이 생길 시 */
-/* 버튼 외부 여백에 click 이벤트를 주기 위해 */
-/* 버튼 양옆으로 투명한 요소를 추가 배치한다 */
-/* 모달창 전체 레이아웃과 같은 원리 */
-/* .bottom-box {
-    width: 100%;
-}
-
-.bottom-box > div {
-    flex-grow: 1;
-} */
 
 .title {
     padding: 20px 0;
 }
 
 .title h1 {
-    font-size: 1.3rem;
-    margin: 0 20px 0 0;
     display: inline-block;
+    margin: 0 20px 0 0;
+    font-size: 1.3rem;
 }
 
 .title a {
     margin: 0 10px 0 0;
+    color: #fff;
     font-size: 1.3rem;
     font-weight: lighter;
-    color: #fff;
 }
 
 .title span {
+    margin: 0 0 0 15px;
     font-size: 0.8rem;
     font-weight: lighter;
-    margin: 0 0 0 15px;
 }
 
 .item img {
@@ -102,7 +87,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     width: 100%;
     background: transparent;
 }
@@ -110,12 +94,10 @@
 .item .btn-move a {
     align-items: center;
     justify-content: space-between;
-
     width: 50%;
     height: 130px;
     padding: 30px 40px;
     box-sizing: border-box;
-
     border: 1px solid #fff;
     color: #fff;
     font-size: 2.5rem;
@@ -136,52 +118,26 @@
     width: 70px;
 }
 
-/* !! 앵커태그 추가하는 형태로 변경 !! */
-/* BTN Visit at the bottom */
-/* .btn-visit {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    background: transparent;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 200px;
-    color: #fff;
-    z-index: 100;
-    margin: 80px 0;
-}
-
-.btn-visit:hover {
-    background: #fff;
-    color: #000;
-} */
-
 /* only Mobile ver. */
 .btn-close {
     display: none;
 }
 
-/* Alert modal */
+/* ALERT MODAL */
 .alert {
     display: none;
-    /* display: flex; */
-
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: -150px;
     left: 50%;
     transform: translateX(-50%);
-
     z-index: 30;
-
-    justify-content: center;
-    align-items: center;
 }
 
 .alert > div {
-    position: relative;
     align-items: center;
+    position: relative;
     width: 500px;
     min-height: 50px;
     height: fit-content;
@@ -191,13 +147,14 @@
 
 .alert p {
     display: block;
+    width: 430px;
     padding: 10px;
     box-sizing: border-box;
-    width: 430px;
-    text-align: justify;
-    font-size: 1rem;
-    line-height: 1.2rem;
     color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    text-align: justify;
 }
 
 .alert button {
@@ -278,17 +235,11 @@
         right: 4%;
         width: 45px;
         height: 45px;
-        background-color: #fff;
         background-image: url("../img/close.svg");
+        background-color: #fff;
         border: 2px solid #000;
         border-radius: 50%;
         cursor: pointer;
     }
-
-    /* !! 앵커태그 추가하는 형태로 변경 !! */
-    /* BTN Visit at the bottom */
-    /* .bottom-box > div {
-        visibility: hidden;
-    } */
 
 }

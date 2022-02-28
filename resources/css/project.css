@@ -1,12 +1,12 @@
 /* SECTION */
 section {
-    padding: 0 0 100px;
     height: 100%;
+    padding: 0 0 100px;
 }
 
 section > div {
-    width: 50%;
     gap: 10px;
+    width: 50%;
 }
 
 section .item {
@@ -50,13 +50,13 @@ section h1 {
 }
 
 .container-right .item .hide {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     padding: 50px;
@@ -73,28 +73,28 @@ section h1 {
 }
 
 .container-right .item:hover h1 {
-    opacity: 0;
     color: #fff;
+    opacity: 0;
 }
 
 .container-right .item:hover .hide {
-    opacity: 1;
     background: #000;
     color: #fff;
+    opacity: 1;
 }
 
 /* BTN Open */
 .container-right a {
-    margin: 50px 0 0 0;
     width: 200px;
     height: 50px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 50px;
-    border: 1px solid #fff;
+    margin: 50px 0 0 0;
     background: transparent;
+    border: 1px solid #fff;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 50px;
     transition: all 0.2s;
 }
 
@@ -109,8 +109,8 @@ section h1 {
     /* PROJECT */
     section {
         flex-direction: column;
-        padding: 0 0 60px 0;
         height: unset;
+        padding: 0 0 60px 0;
     }
 
     section > div {
@@ -123,10 +123,10 @@ section h1 {
     }
 
     .container-left h1 {
-        font-size: 1.5rem;
         height: fit-content;
-        line-height: unset;
         padding: 5px 15px;
+        font-size: 1.5rem;
+        line-height: unset;
     }
 
     .container-left p {
@@ -156,6 +156,7 @@ section h1 {
         background: #fff;
         color: #000;
         font-weight: unset;
+        opacity: 1;
     }
 
     .container-right .item:hover {
