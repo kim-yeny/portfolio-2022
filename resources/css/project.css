@@ -30,6 +30,7 @@ section h1 {
 .container-left p {
     padding: 15px 20px;
     text-align: justify;
+    word-break: break-all;
 }
 
 /* Right Side */

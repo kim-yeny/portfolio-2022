@@ -39,13 +39,13 @@ function alertCustom(txt) {
 
 // Copy contents
 function copyClip(val, txt) {
-    var textarea = document.createElement("textarea");
-    document.body.appendChild(textarea);
-    textarea.value = val;
+    $("body").append("<textarea>");
+    var textarea = $("body textarea");
+    textarea.val(val);
     textarea.select();
     document.execCommand('copy');
     alertCustom(`${txt} 클립보드에 복사했습니다.`);
-    document.body.removeChild(textarea);
+    textarea.remove();
 }
 
 // Close MODAL
