@@ -56,10 +56,11 @@ header a:hover {
 
 .container p a {
     font-weight: bold;
-    padding: 0 2px;
+    padding: 0 5px 2px;
+    display: inline-block;
+    /* line-height: 1.1rem; */
+    border: 1px solid #000;
     transition: all 0.1s;
-    background-color: #000;
-    color: #fff;
 }
 
 .container p a:hover {
@@ -108,7 +109,7 @@ header a:hover {
         border-top: 1px solid #000000;
    
          /* Text ellipsis */
-        height: 190px;
+        max-height: 230px;
     }
 
     .container h1 {
