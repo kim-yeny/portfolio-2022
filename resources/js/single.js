@@ -81,7 +81,7 @@ $(document).on("click", ".container .item", function () {
         + `<div class="bottom"></div>`
         + `<div class="btn-move flex">`
         + `<a href="${data[idx].linkSite}" class="flex" target="_blank">`
-        + `<div><i class="fas fa-arrow-alt-circle-right"></i>Visit site</div>`
+        + `<div><i class="fas fa-arrow-alt-circle-right"></i>View site</div>`
         + `${data[idx].code}`
         + `<a href="${data[idx].linkGit}" class="flex" target="_blank">`
         + `<div><i class="fab fa-github"></i>GitHub</div></a>`
