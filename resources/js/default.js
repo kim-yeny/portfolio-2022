@@ -70,4 +70,11 @@ $(function () {
             scrollTop: 0
         }, 500);
     });
+
+    // Click when press Enter key
+    $("[tabindex=0]").keyup(function(event){
+        if(event.keyCode == 13){
+            $(this).click();
+        }
+    });
 });

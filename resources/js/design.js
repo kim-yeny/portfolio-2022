@@ -104,7 +104,7 @@ const modalUrl = "./resources/img/design/design-modal-";
 $(function () {
     for (key in data) {
         $(".container").append(
-            `<div class="item flex" name="${data[key].num}"`
+            `<div class="item flex" name="${data[key].num}" tabindex="0"`
             + `style="background-image: url(${thumbUrl}${data[key].num}.jpg)" alt="${data[key].title}">`
             + `<div class="hide"><h1><span>${data[key].sub}</span>`
             + `${data[key].title}</h1></div></div>`
@@ -130,6 +130,12 @@ $(document).on("click", ".container .item", function(){
     // Open MODAL
     modal.show();
     $("body").css("overflow-y", "hidden");
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            closeModal();
+        }
+    });
 });
 
 // 동적으로 불러온 요소에 이벤트 주는 방식 $(document).on 필수

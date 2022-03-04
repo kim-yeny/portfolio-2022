@@ -53,7 +53,7 @@ const modalUrl = "./resources/img/single/single-modal-";
 $(function () {
     for (key in data) {
         $(".container").append(
-            `<div class="item flex" name="${data[key].num}">`
+            `<div class="item flex" name="${data[key].num}" tabindex="0">`
             + `<h1>${data[key].title}</h1>`
             + `<img src="${thumbUrl}${data[key].num}.jpg" alt="${data[key].alt}">`
             + `<p>${data[key].text}</p></div>`
