@@ -14,7 +14,7 @@ const data = [
     {
         num: 3,
         sub: "Branding",
-        title: "달콤한 캬라멜 연구소",
+        title: "달캬 연구소",
         text: "카페 브랜딩"
     },
     {

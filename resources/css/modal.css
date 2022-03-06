@@ -1,23 +1,23 @@
 /* MODAL */
 .modal {
     /* 가장 큰 틀은 무조건 fixed 속성을 사용해야 함 */
-    /* 내부 레이아웃은 다른 div가 flex로 조정해줘야 하므로 fixed된 틀이 필요 */
+    /* 내부 레이아웃은 다른 div가 flex로 조정해줘야 하므로 fixed된 틀 필요 */
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     z-index: 30;
+    background: rgba(0, 0, 0, 0.93);
+
     /* 내부 컨텐츠가 길 예정이므로 스크롤 설정 */
     overflow-y: scroll;
-    background: rgba(0, 0, 0, 0.93);
 }
 
-/* 모달창 내부 첫번째 요소는 컨텐츠를 감싸는 용도 */
+/* 모달창 내부 첫번째 요소는 컨텐츠 감싸는 용도 */
 .modal > div {
     /* 컨텐츠와 사이드 영역 레이아웃을 위해 flex 적용 */
-    display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 100%;
     min-height: 100vh;
 }
@@ -28,27 +28,23 @@
 
 /* 내용이 들어갈 영역 */
 .content {
-    /* 자동으로 영역을 차지하도록 */
-    display: flex;
-    flex-direction: column;
     position: relative;
     width: 1200px;
     color: #fff;
-    /* background: red; */
+    background-color: red;
 }
 
-/* 사이드 영역 - Modal Close 기능을 구현할 클릭 영역 */
+/* 사이드 영역 - closeModal 기능을 구현할 클릭 영역 */
 .side {
     flex-grow: 1;
+    /* 클릭 영역이 스크롤 되어도 유지되어야 하므로 inherit으로 상속 */
     height: inherit;
-    /* 클릭 영역이 스크롤이 되어도 유지되어야 하므로 inherit으로 상속 */
 }
 
-/* 하단 영역 - Modal Close 기능을 구현할 클릭 영역 */
+/* 하단 영역 - closeModal 기능을 구현할 클릭 영역 */
 .bottom {
     width: 100%;
     min-height: 80px;
-    flex-grow: 1;
 }
 
 .title {
@@ -64,14 +60,14 @@
 .title a {
     margin: 0 10px 0 0;
     color: #fff;
-    font-size: 1.3rem;
     font-weight: lighter;
+    font-size: 1.3rem;
 }
 
 .title span {
     margin: 0 0 0 15px;
-    font-size: 0.8rem;
     font-weight: lighter;
+    font-size: 0.8rem;
 }
 
 .item img {
@@ -100,8 +96,8 @@
     box-sizing: border-box;
     border: 1px solid #fff;
     color: #fff;
-    font-size: 2.5rem;
     font-weight: bold;
+    font-size: 2.5rem;
 }
 
 .item .btn-move a i {
@@ -139,8 +135,8 @@
     align-items: center;
     position: relative;
     width: 500px;
-    min-height: 50px;
     height: fit-content;
+    min-height: 50px;
     padding: 30px;
     background-color: #fff;
 }
@@ -151,10 +147,10 @@
     padding: 10px;
     box-sizing: border-box;
     color: #000;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.2rem;
     text-align: justify;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2rem;
 }
 
 .alert button {
@@ -218,7 +214,7 @@
         width: 100%;
         height: fit-content;
         padding: 20px;
-        border: none;
+        border: 1px solid transparent;
         border-bottom: 1px solid #fff;
         font-size: 1.8rem;
     }
@@ -241,5 +237,4 @@
         border-radius: 50%;
         cursor: pointer;
     }
-
 }

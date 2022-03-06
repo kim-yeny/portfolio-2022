@@ -9,6 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio 메인</title>
 
+    <!-- IE Browser block -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if ((navigator.appName == "Netscape" && agent.indexOf("trident") != -1) || (agent.indexOf("msie") != -1)) {
+            location.replace("https://support.microsoft.com/ko-kr/office/%ec%97%b0%ea%b2%b0%ed%95%98%eb%a0%a4%eb%8a%94-%ec%9b%b9-%ec%82%ac%ec%9d%b4%ed%8a%b8%ea%b0%80-internet-explorer%ec%97%90%ec%84%9c-%ec%9e%91%eb%8f%99%ed%95%98%ec%a7%80-%ec%95%8a%ec%8a%b5%eb%8b%88%eb%8b%a4-8f5fc675-cd47-414c-9535-12821ddfc554?ui=ko-kr&rs=ko-kr&ad=kr", "네이버팝업", "width=700px,height=800px,scrollbars=yes");
+        };
+    </script>
+
     <!-- SNS share -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
@@ -16,10 +24,6 @@
     <meta property="og:image" content="">
     <meta property="og:description" content="안녕하세요. 김예은의 포트폴리오입니다.">
     <meta property="og:site_name" content="2022 Portfolio">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./resources/img/favicon.png" type="image/png" />
-    <link rel="apple-touch-icon-precomposed" href="./resources/img/favicon.png" type="image/png" />
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -34,6 +38,10 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpulicy="no-referrer" />
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./resources/img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon-precomposed" href="./resources/img/favicon.png" type="image/png" />
+
     <!-- CSS Public -->
     <script src="./resources/js/prefoxfree.min.js"></script>
     <link rel="stylesheet" href="./resources/css/base.css">
@@ -42,18 +50,10 @@
     
     <!-- CSS Private -->
     <link rel="stylesheet" href="./resources/css/index.css">
-
-    <!-- IE Browser block -->
-    <script>
-        var agent = navigator.userAgent.toLowerCase();
-        if ((navigator.appName == "Netscape" && agent.indexOf("trident") != -1) || (agent.indexOf("msie") != -1)) {
-            location.replace("https://support.microsoft.com/ko-kr/office/%ec%97%b0%ea%b2%b0%ed%95%98%eb%a0%a4%eb%8a%94-%ec%9b%b9-%ec%82%ac%ec%9d%b4%ed%8a%b8%ea%b0%80-internet-explorer%ec%97%90%ec%84%9c-%ec%9e%91%eb%8f%99%ed%95%98%ec%a7%80-%ec%95%8a%ec%8a%b5%eb%8b%88%eb%8b%a4-8f5fc675-cd47-414c-9535-12821ddfc554?ui=ko-kr&rs=ko-kr&ad=kr", "네이버팝업", "width=700px,height=800px,scrollbars=yes");
-        };
-    </script>
 </head>
 
 <body>
-    <!-- Alert modal -->
+    <!-- Alert MODAL -->
     <div class="alert">
         <div class="flex">
             <p></p>
@@ -89,9 +89,9 @@
                     <br>
                     <a href="https://github.com/kim-yeny" class="site" target="_blank">github.com/kim-yeny</a>
                 </p>
-                <a href="./letter.html" class="flex" title="자기소개">
+                <a href="./letter.html" class="flex">
                     <img src="./resources/img/more.svg" height="20" width="20">
-                    More
+                    자기소개서
                 </a>
             </div>
             <div class="item">

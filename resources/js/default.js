@@ -49,7 +49,7 @@ function copyClip(val, txt) {
 }
 
 // Close MODAL
-// It must be loaded as an HTML element.
+// It must be loaded as an HTML element
 $(document).on("click", ".modal .side, .modal .bottom, .modal .bottom-box > div, .modal .btn-close", function () {
     closeModal();
 });

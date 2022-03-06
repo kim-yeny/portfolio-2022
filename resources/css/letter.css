@@ -1,6 +1,5 @@
 header h1 {
     width: 50.2%;
-    /* font-size: 2.7rem; */
 }
 
 header a {
@@ -56,11 +55,10 @@ header a:hover {
 }
 
 .container p a {
-    font-weight: bold;
-    padding: 0 5px 2px;
     display: inline-block;
-    /* line-height: 1.1rem; */
+    padding: 0 5px 2px;
     border: 1px solid #000;
+    font-weight: bold;
     transition: all 0.1s;
 }
 
@@ -70,9 +68,9 @@ header a:hover {
 }
 
 .active {
-    overflow: visible;
-    text-overflow: unset;
     display: unset !important;
+    text-overflow: unset;
+    overflow: visible;
 }
 
 /* Responsive ver. */
