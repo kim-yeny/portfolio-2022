@@ -31,7 +31,6 @@
     position: relative;
     width: 1200px;
     color: #fff;
-    background-color: red;
 }
 
 /* 사이드 영역 - closeModal 기능을 구현할 클릭 영역 */
@@ -132,19 +131,18 @@
 }
 
 .alert > div {
+    justify-content: space-between;
     align-items: center;
     position: relative;
     width: 500px;
     height: fit-content;
     min-height: 50px;
-    padding: 30px;
+    padding: 30px 50px;
     background-color: #fff;
 }
 
 .alert p {
-    display: block;
-    width: 430px;
-    padding: 10px;
+    width: fit-content;
     box-sizing: border-box;
     color: #000;
     text-align: justify;
@@ -154,9 +152,7 @@
 }
 
 .alert button {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+    position: relative;
     width: 50px;
     height: 50px;
     background-color: transparent;
@@ -237,4 +233,27 @@
         border-radius: 50%;
         cursor: pointer;
     }
+
+    /* ALERT MODAL */
+    .alert > div {
+        width: 100vw;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .alert p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    
+    .alert button {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .alert button:after,
+    .alert button:before {
+        width: 30px;
+    }
+    
 }

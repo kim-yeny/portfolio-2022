@@ -27,13 +27,13 @@ header h1 {
 #top .item {
     flex: 1;
     max-width: 100%;
-    padding: 5px;
+    padding: 10px 5px 5px;
     box-sizing: border-box;
     border-top: 1px solid #fff;
 }
 
 #top h1 {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     font-size: 2rem;
 }
 
@@ -55,6 +55,7 @@ header h1 {
     /* font-family: 'Montserrat', sans-serif; */
     font-weight: bold;
     font-size: 1.2rem;
+    font-size: 1rem;
     transition: all 0.1s;
 }
 
@@ -151,7 +152,7 @@ header h1 {
     }
 
     #top a:not(a.site) {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     /* MENU at the bottom */
@@ -162,7 +163,8 @@ header h1 {
     
     #bottom h1 {
         width: 100%;
-        font-size: 6rem;
+        margin: 40px 0 0;
+        font-size: 5rem;
         opacity: 12%;
     }
     
