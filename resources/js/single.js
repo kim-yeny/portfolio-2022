@@ -4,43 +4,52 @@ const data = [
         title: "EsRP Landing page",
         ait: "ESRP 랜딩 페이지",
         linkSite: "https://project-esrp.netlify.app/",
-        linkGit: "https://github.com/kim-yeny/project-esrp",
+        linkGit: "https://github.com/kim-yeny/project-esrp/",
         text: "팀 프로젝트로 구현했던 웹 ERP 서비스의 가상 랜딩 페이지입니다. Flex 속성을 이용한 반응형 웹사이트로, 플러그인을 최소화하고 jQuery를 이용하여 퍼블리싱 하였습니다.",
         code: `<img src="./resources/img/single/single-qr-1.png" alt="ESRP 랜딩 페이지 QR코드">`
     },
     {
         num: 2,
-        title: "KKONDAE Test",
-        ait: "꼰대력 테스트",
-        linkSite: "https://project-kkondae.netlify.app/",
-        linkGit: "https://github.com/kim-yeny/project-kkondae",
-        text: "키치한 컨셉의 꼰대력 테스트 사이트입니다. 부트스트랩을 활용하여 퍼블리싱하였습니다. 데이터는 Javascript 핸들링하였고, 카카오톡 API를 활용한 공유 기능까지 구현하였습니다.",
-        code: `<img src="./resources/img/single/single-qr-2.png" alt="꼰대력 테스트 QR코드">`
-    },
-    {
-        num: 3,
         title: "Law Firm Website",
         ait: "로펌 웹사이트",
         linkSite: "https://project-lawfirm.netlify.app/",
-        linkGit: "https://github.com/kim-yeny/project-lawfirm",
+        linkGit: "https://github.com/kim-yeny/project-lawfirm/",
         text: "가상의 법무법인 홈페이지를 디자인 및 퍼블리싱하였습니다. jQuery를 이용하였고, Flex 속성을 이용한 반응형 웹사이트입니다. <b>'고객센터 > 공지사항'</b> 카테고리를 서브 페이지로 확인하실 수 있습니다.",
-        code: `<img src="./resources/img/single/single-qr-3.png" alt="로펌 웹사이트 QR코드">`
+        code: `<img src="./resources/img/single/single-qr-2.png" alt="로펌 웹사이트 QR코드">`
     },
     {
-        num: 4,
+        num: 3,
         title: "Momentum Clone",
         ait: "모멘텀 클론코딩",
         linkSite: "https://new-momentum.netlify.app/",
-        linkGit: "https://github.com/kim-yeny/project-momentum",
+        linkGit: "https://github.com/kim-yeny/project-momentum/",
         text: "구글 크롬(Chrome) 확장 프로그램 모멘텀(Momentum)을 클론 코딩하였습니다. Javascript, Local Storage, 날씨 API를 사용하여 기본 기능을 재현하였으며 리디자인한 UI에 추가 기능을 더하여 완성하였습니다.",
         code: ``
     },
     {
+        num: 4,
+        title: "Music Player",
+        ait: "뮤직 플레이어",
+        linkSite: "https://project-music.netlify.app/",
+        linkGit: "https://github.com/kim-yeny/project-music/",
+        text: "멀티미디어 요소를 사용자가 제어할 수 있도록 바닐라 JS를 사용하여 구현한 뮤직 플레이어입니다. Flex 속성을 활용한 반응형 웹 사이트로, 인터랙티브한 효과와 뉴모피즘 스타일의 UI 디자인이 특징입니다. ",
+        code: `<img src="./resources/img/single/single-qr-4.png" alt="뮤직 플레이어 QR코드">`
+    },
+    {
         num: 5,
+        title: "KKONDAE Test",
+        ait: "꼰대력 테스트",
+        linkSite: "https://project-kkondae.netlify.app/",
+        linkGit: "https://github.com/kim-yeny/project-kkondae/",
+        text: "키치한 컨셉의 꼰대력 테스트 사이트입니다. 부트스트랩을 활용하여 퍼블리싱하였습니다. 데이터는 Javascript로 핸들링하였고, 카카오톡 API를 활용한 공유 기능까지 구현하였습니다.",
+        code: `<img src="./resources/img/single/single-qr-5.png" alt="꼰대력 테스트 QR코드">`
+    },
+    {
+        num: 6,
         title: "Online Shopping",
         ait: "온라인 쇼핑몰",
         linkSite: "https://project-shop-01.netlify.app/",
-        linkGit: "https://github.com/kim-yeny/project-shop-1",
+        linkGit: "https://github.com/kim-yeny/project-shop-1/",
         text: "가상의 온라인 웹 쇼핑몰 메인 화면을 디자인 및 퍼블리싱하였습니다. 너비 1280px의 고정형 웹사이트로, 별도의 플러그인 없이 jQuery를 사용하여 완성하였습니다.",
         code: ``
     },
