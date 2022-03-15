@@ -15,6 +15,7 @@ section .item {
 
 section h1 {
     font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Left Side */

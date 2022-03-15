@@ -1,11 +1,7 @@
 /* FONT */
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
-@font-face{ 
-    font-family: "Neutro", sans-serif;
-    src:url(Neutro.otf);
-    src:local(※), url(Neutro.otf) format(‘off’)
-}
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
 /* GLOBAL */
 body,
@@ -21,11 +17,15 @@ h1 {
     font-size: 5rem;
 }
 
-h1,
+h1 {
+    font-family: 'Krona One', sans-serif;
+}
+
 nav,
 footer {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
+    letter-spacing: 0.1rem;
 }
 
 a, p {
@@ -78,7 +78,6 @@ nav {
 nav a {
     position: relative;
     padding: 0 7px;
-    letter-spacing: 0.1rem;
     transition: all 0.1s;
 }
 
