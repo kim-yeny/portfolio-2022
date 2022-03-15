@@ -21,7 +21,7 @@ const data = [
         num: 3,
         title: "Momentum Clone",
         ait: "모멘텀 클론코딩",
-        linkSite: "https://new-momentum.netlify.app/",
+        linkSite: "https://project-momentum.netlify.app/",
         linkGit: "https://github.com/kim-yeny/project-momentum/",
         text: "구글 크롬(Chrome) 확장 프로그램 모멘텀(Momentum)을 클론 코딩하였습니다. Javascript, Local Storage, 날씨 API를 사용하여 기본 기능을 재현하였으며 리디자인한 UI에 추가 기능을 더하여 완성하였습니다.",
         code: ``
