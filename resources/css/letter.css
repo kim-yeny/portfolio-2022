@@ -96,6 +96,12 @@ header a:hover {
     
     header a {
         margin: 0;
+        transition: unset;
+    }
+
+    header a:hover {
+        color: #000;
+        background: #fff;
     }
 
     /* SECTION */

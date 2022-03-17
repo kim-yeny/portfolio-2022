@@ -159,10 +159,25 @@ header h1 {
         font-size: 1.3rem;
     }
 
+    #top a:hover:not(a.site) {
+        color: #fff;
+        background: #000;
+    }
+
     /* MENU at the bottom */
     #bottom a {
         position: relative;
         height: 100px;
+        transition: unset;
+    }
+
+    #bottom a:hover {
+        background: #000;
+    }
+    
+    #bottom a:hover h1,
+    #bottom a:hover p {
+        color: #fff;
     }
     
     #bottom h1 {
