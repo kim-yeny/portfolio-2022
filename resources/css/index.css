@@ -159,9 +159,17 @@ header h1 {
         font-size: 1.3rem;
     }
 
+    #top a img {
+        transition: unset;
+    }
+
     #top a:hover:not(a.site) {
         color: #fff;
         background: #000;
+    }
+
+    #top a:hover img {
+        filter: unset;
     }
 
     /* MENU at the bottom */
